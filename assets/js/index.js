@@ -1,3 +1,5 @@
+//NOTA: EN EL DEPLOY TENGO PROBLEMAS CON LA IMAGEN QUE ESTOY TRATANDO DE SOLUCIONAR
+
 import Leon from "./leon.js";
 import Oso from "./oso.js";
 import Lobo from "./lobo.js";
@@ -41,7 +43,7 @@ registrar.addEventListener("click", async () => {
   const preview = document.getElementById("Animales");
 
   preview.innerHTML += `
-  <img  style="width:  180px" src=${src}  /> `;
+<img  style="width:  180px" src=${src}  /> `;
 
   switch (animalExists.name) {
     case "Leon":
