@@ -1,5 +1,8 @@
-import Animal from "./animal.js ";
 import Leon from "./leon.js";
+import Oso from "./oso.js";
+import Lobo from "./lobo.js";
+import Aguila from "./aguila.js";
+import Serpiente from "./serpiente.js";
 
 let animalExists;
 let src;
@@ -38,11 +41,47 @@ registrar.addEventListener("click", async () => {
   const preview = document.getElementById("Animales");
 
   preview.innerHTML += `
-  <img  style="width:  180px" src=${src} alt='León' /> `;
-  const leonsito = new Leon(
-    selecAnimal.value,
-    selecEdad.value,
-    selectImage.value,
-    comentarios.value
-  );
+  <img  style="width:  180px" src=${src}  /> `;
+
+  switch (animalExists.name) {
+    case "Leon":
+      new Leon(
+        selecAnimal.value,
+        selecEdad.value,
+        selectImage.value,
+        comentarios.value
+      );
+      break;
+    case "Aguila":
+      new Aguila(
+        selecAnimal.value,
+        selecEdad.value,
+        selectImage.value,
+        comentarios.value
+      );
+      break;
+    case "Oso":
+      new Oso(
+        selecAnimal.value,
+        selecEdad.value,
+        selectImage.value,
+        comentarios.value
+      );
+      break;
+    case "Serpiente":
+      new Serpiente(
+        selecAnimal.value,
+        selecEdad.value,
+        selectImage.value,
+        comentarios.value
+      );
+      break;
+    default:
+      new Lobo(
+        selecAnimal.value,
+        selecEdad.value,
+        selectImage.value,
+        comentarios.value
+      );
+  }
 });
