@@ -19,7 +19,7 @@ selecAnimal.addEventListener("change", async () => {
   const animalValue = selecAnimal.value;
   animalExists = animales.find((animal) => animal.name === animalValue);
   const path = animalExists.imagen;
-  src = `/assets/imgs/${path}`;
+  src = `assets/imgs/${path}`;
   selectImage.innerHTML = `
      <img  style="width:  180px" src=${src}  /> `;
 });
