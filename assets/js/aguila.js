@@ -5,7 +5,7 @@ class Aguila extends Animal {
     super(nombre, edad, img, comentarios, sonido);
   }
   Chillar() {
-    return console.log("chillar");
+    return `<audio src="../assets/sounds/Chillido.mp3"></audio>`;
   }
 }
 export default Aguila;
