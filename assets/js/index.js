@@ -21,7 +21,7 @@ selecAnimal.addEventListener("change", async () => {
   const path = animalExists.imagen;
   src = `../assets/imgs/${path}`;
   selectImage.innerHTML = `
-     <img  style="width:  180px" src=${src} alt='León' /> `;
+     <img  style="width:  180px" src=${src}  /> `;
 });
 
 // select que trae el valor de la edad
